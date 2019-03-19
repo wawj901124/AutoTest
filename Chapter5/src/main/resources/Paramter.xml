@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="parameter">
+    <parameter name="para" value="test_para1"/>
+    <test name="param">
+        <parameter name="name" value="zhangsan"/>
+        <parameter name="age" value="10"/>
+        <parameter name="name" value="lisi"/>
+        <parameter name="age" value="20"/>
+        <classes>  <!--参数不能放在classes，要放在其外-->
+            <class name="com.course.testng.paramter.ParamterTest"/>
+        </classes>
+    </test>
+
+</suite>
